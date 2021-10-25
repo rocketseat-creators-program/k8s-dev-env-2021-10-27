@@ -27,7 +27,10 @@ make kind-up
 - [x] Criar scripts para instalar dependencias
 - [x] Criar script para ligar cluster k8s
 - [x] Criar ingress no cluster
-- [ ] Criar aplicação demonstrativa
+- [x] Instalar local registry
+- [x] Criar aplicação demonstrativa
+- [ ] Roteando por host
+- [ ] Roteando por path
 
 ## Expert
 

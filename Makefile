@@ -11,3 +11,6 @@ cluster_up:
 cluster_down:
 	./scripts/cluster_down.sh
 
+run_projects:
+	./scripts/run_projects.sh
+

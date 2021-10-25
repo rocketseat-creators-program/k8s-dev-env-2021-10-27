@@ -19,4 +19,5 @@ spec:
         image: localhost:5000/site:local
         ports:
         - containerPort: 80
+        imagePullPolicy: Always
 
