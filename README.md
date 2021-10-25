@@ -22,6 +22,13 @@ make kind-install
 make kind-up
 ```
 
+## Check list
+
+- [x] Criar scripts para instalar dependencias
+- [x] Criar script para ligar cluster k8s
+- [x] Criar ingress no cluster
+- [ ] Criar aplicação demonstrativa
+
 ## Expert
 
 | [<img src="https://github.com/alepaez.png" width="75px;"/>][1] |

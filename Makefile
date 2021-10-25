@@ -1,14 +1,13 @@
-CLUSTER_NAME=k8s-dev-env
 
-kubectl-install:
+kubectl_install:
 	./scripts/kubectl_install.sh
 
-kind-install:
+kind_install:
 	./scripts/kind_install.sh
 
-kind-up:
-	kind create cluster --name ${CLUSTER_NAME}
+cluster_up:
+	./scripts/cluster_up.sh
 
-kind-down:
-	kind delete cluster --name ${CLUSTER_NAME}
+cluster_down:
+	./scripts/cluster_down.sh
 
