@@ -21,8 +21,6 @@ spec:
         - name: MYSQL_ALLOW_EMPTY_PASSWORD
           value: "true"
         ports:
-          - name: tcp
-            port: 3306
-            protocol: TCP
+        - containerPort: 3306
         imagePullPolicy: Always
 
