@@ -14,12 +14,12 @@ Ambiente para desenvolver microserviços usando k8s. Apresentado por [Alexandre 
 
 2. Rodar comandos de instalação
 ```bash
-make kubectl-install
-make kind-install
+make kubectl_install
+make kind_install
 ```
 3. Subir o kind
 ```bash
-make kind-up
+make cluster_up
 ```
 
 ## Check list

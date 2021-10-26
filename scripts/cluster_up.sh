@@ -25,7 +25,7 @@ kubectl apply -f ./k8s/plugins
 
 echo "Waiting Ingress to be ready..."
 
-sleep 5
+sleep 10
 
 kubectl wait --namespace ingress-nginx \
 		    --for=condition=ready pod \
