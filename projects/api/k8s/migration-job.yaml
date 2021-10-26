@@ -1,0 +1,17 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: api-database-migration
+spec:
+  template:
+    spec:
+      containers:
+      - name: api
+        image: localhost:5000/api:local
+        command:
+          - "./setup_database.sh"
+        env:
+        - name: NODE_ENV
+          value: "staging"
+      restartPolicy: Never
+  backoffLimit: 4

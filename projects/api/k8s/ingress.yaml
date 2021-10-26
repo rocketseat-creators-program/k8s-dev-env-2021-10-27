@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: api
+spec:
+  rules:
+    - host: localhost
+      http:
+        paths:
+        - path: /users
+          pathType: Prefix
+          backend:
+            service:
+              name: api
+              port:
+                number: 3000
